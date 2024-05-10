@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import { items } from "../../values/items";
 import { Typography } from "@mui/material";
-import DiseasePredictionService from "./diseasePredictionService";
+
+import DiseasePredictionService from "./diseasePredictionService/diseasePredictionService";
 
 const ServicePage = () => {
   const { productId } = useParams();
