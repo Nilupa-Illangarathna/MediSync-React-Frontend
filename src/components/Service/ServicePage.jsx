@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import { items } from "../../values/items";
 import { Typography } from "@mui/material";
+import DiseasePredictionService from "./diseasePredictionService";
 
 const ServicePage = () => {
   const { productId } = useParams();
@@ -13,14 +14,12 @@ const ServicePage = () => {
     setProduct(foundProduct);
   }, [productId]);
 
-  if (product == null) return <Typography>No Product Found</Typography>;
-
-  return (
-    <>
-      <Typography variant="h3">Welcome to {product.name}</Typography>
-      <img src={product.image} alt={product.name} />
-    </>
-  );
+  switch (productId) {
+    case "1":
+      return <DiseasePredictionService />;
+    default:
+      return <Typography>No Service Found</Typography>;
+  }
 };
 
 export default ServicePage;
