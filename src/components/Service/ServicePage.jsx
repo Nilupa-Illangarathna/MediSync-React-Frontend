@@ -5,6 +5,7 @@ import { Typography } from "@mui/material";
 
 import DiseasePredictionService from "./diseasePredictionService/diseasePredictionService";
 import AppointmentBookingService from "./appointmentBookingService";
+import DDIService from "./ddi_service";
 
 const ServicePage = () => {
   const { productId } = useParams();
@@ -21,6 +22,8 @@ const ServicePage = () => {
       return <DiseasePredictionService />;
     case "2":
       return <AppointmentBookingService />;
+    case "3":
+      return <DDIService />;
     default:
       return <Typography>No Service Found</Typography>;
   }
