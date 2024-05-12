@@ -4,6 +4,7 @@ import { items } from "../../values/items";
 import { Typography } from "@mui/material";
 
 import DiseasePredictionService from "./diseasePredictionService/diseasePredictionService";
+import AppointmentBookingService from "./appointmentBookingService";
 
 const ServicePage = () => {
   const { productId } = useParams();
@@ -18,6 +19,8 @@ const ServicePage = () => {
   switch (productId) {
     case "1":
       return <DiseasePredictionService />;
+    case "2":
+      return <AppointmentBookingService />;
     default:
       return <Typography>No Service Found</Typography>;
   }
