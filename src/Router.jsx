@@ -15,6 +15,9 @@ import MedicalRecordUpload from "./components/MedicalRecordUpload/MedicalRecordU
 import PaymentGateway from "./components/dummyComponents/PaymentGateway";
 import RecordManagement from "./components/dummyComponents/RecordManagement";
 import DoctorPatientChat from "./components/dummyComponents/ChatWindow";
+import EducationalContentPage from "./components/dummyComponents/EducationContentPage";
+import ArticleDetail from "./components/dummyComponents/ArticleDetails";
+import HealthGuideDetails from "./components/dummyComponents/HealthGuideDetails";
 import { navLinks, initialRole } from "./RBAC"; // Import RBAC logic
 import ABACTable from "./components/superAdmin/superAdminHome/ABACTable";
 
@@ -42,6 +45,11 @@ function Router() {
         <Route path="/payments" element={<PaymentGateway />} />
         <Route path="/abac" element={<ABACTable />} />
         <Route path="/Pat_DocComm" element={<DoctorPatientChat />} />
+        <Route path="/EducationalContent" element={<EducationalContentPage/>} />
+        <Route path="/article/:id" element={<ArticleDetail />} /> 
+        <Route path="/healthGuide/:id" element={<HealthGuideDetails />} />
+
+
       </Routes>
     </BrowserRouter>
   );

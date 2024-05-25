@@ -9,30 +9,59 @@ import { useNavigate } from "react-router-dom";
 
 export default function ItemCard({ image, name, description, inStock, id }) {
   const navigate = useNavigate();
-  return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea
-        onClick={() => {
-          // Navigation logic goes here
-          Example: navigate(`/product/${id}`)
-        }}
-      >
-        <CardMedia
-          component="img"
-          height="140"
-          image={image}
-          alt={name}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {name}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {description}
-          </Typography>
-
-        </CardContent>
-      </CardActionArea>
-    </Card>
-  );
+  if(id==7){
+    return (
+      <Card sx={{ maxWidth: 345 }}>
+        <CardActionArea
+          onClick={() => {
+            // Navigation logic goes here
+            Example: navigate(`/EducationalContent`)
+          }}
+        >
+          <CardMedia
+            component="img"
+            height="140"
+            image={image}
+            alt={name}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {name}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {description}
+            </Typography>
+  
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    );
+  }else{
+    return (
+      <Card sx={{ maxWidth: 345 }}>
+        <CardActionArea
+          onClick={() => {
+            // Navigation logic goes here
+            Example: navigate(`/product/${id}`)
+          }}
+        >
+          <CardMedia
+            component="img"
+            height="140"
+            image={image}
+            alt={name}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {name}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {description}
+            </Typography>
+  
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    );
+  }
 }
