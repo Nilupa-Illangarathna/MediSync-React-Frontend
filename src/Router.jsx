@@ -18,6 +18,7 @@ import DoctorPatientChat from "./components/dummyComponents/ChatWindow";
 import EducationalContentPage from "./components/dummyComponents/EducationContentPage";
 import ArticleDetail from "./components/dummyComponents/ArticleDetails";
 import HealthGuideDetails from "./components/dummyComponents/HealthGuideDetails";
+import DrugInteractionPage from "./components/dummyComponents/DrugInteractionsPage";
 import { navLinks, initialRole } from "./RBAC"; // Import RBAC logic
 import ABACTable from "./components/superAdmin/superAdminHome/ABACTable";
 
@@ -48,6 +49,7 @@ function Router() {
         <Route path="/EducationalContent" element={<EducationalContentPage/>} />
         <Route path="/article/:id" element={<ArticleDetail />} /> 
         <Route path="/healthGuide/:id" element={<HealthGuideDetails />} />
+        <Route path="/DrugInteraction" element={<DrugInteractionPage />} />
 
 
       </Routes>
