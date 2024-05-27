@@ -50,6 +50,7 @@ function Router() {
         <Route path="/article/:id" element={<ArticleDetail />} /> 
         <Route path="/healthGuide/:id" element={<HealthGuideDetails />} />
         <Route path="/DrugInteraction" element={<DrugInteractionPage />} />
+        <Route path="/log" element={<DrugInteractionPage />} />
 
 
       </Routes>

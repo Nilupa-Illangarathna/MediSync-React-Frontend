@@ -24,6 +24,8 @@ const ServicePage = () => {
       return <AppointmentBookingService />;
     case "3":
       return <DDIService />;
+    case "4":
+      return <DDIService />;
     default:
       return <Typography>No Service Found</Typography>;
   }
