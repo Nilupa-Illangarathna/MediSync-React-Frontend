@@ -21,6 +21,8 @@ import HealthGuideDetails from "./components/dummyComponents/HealthGuideDetails"
 import DrugInteractionPage from "./components/dummyComponents/DrugInteractionsPage";
 import {initialRole} from "./RBAC"; // Import RBAC logic
 import ABACTable from "./components/superAdmin/superAdminHome/ABACTable";
+import HealthLog from "./components/HealthLog/HealthLog.jsx";
+import SymptomAnalysis from "./components/SymptomAnalysis/SymptomAnalysis";
 
 function Router() {
     const storedData = localStorage.getItem("formData");
@@ -50,7 +52,8 @@ function Router() {
                 <Route path="/article/:id" element={<ArticleDetail/>}/>
                 <Route path="/healthGuide/:id" element={<HealthGuideDetails/>}/>
                 <Route path="/DrugInteraction" element={<DrugInteractionPage/>}/>
-                <Route path="/log" element={<DrugInteractionPage/>}/>
+                <Route path="/log" element={<HealthLog/>}/>
+                <Route path="/symptoms" element={<SymptomAnalysis/>}/>
 
 
             </Routes>

@@ -6,6 +6,7 @@ import {Typography} from "@mui/material";
 import DiseasePredictionService from "./diseasePredictionService/diseasePredictionService";
 import AppointmentBookingService from "./appointmentBookingService";
 import DDIService from "./ddi_service";
+import HealthLog from "../HealthLog/HealthLog.jsx";
 
 const ServicePage = () => {
     const {productId} = useParams();
@@ -25,7 +26,7 @@ const ServicePage = () => {
         case "3":
             return <DDIService/>;
         case "4":
-            return <DDIService/>;
+            return <HealthLog/>;
         default:
             return <Typography>No Service Found</Typography>;
     }
