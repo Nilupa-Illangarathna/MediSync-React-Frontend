@@ -1,23 +1,23 @@
 export const medicalRecordsData = [
     {
-      patientId: "P001",
-      patientName: "John Doe",
-      age: 35,
-      gender: "Male",
-      bloodGroup: "A+",
-      medicalRecordFile: "https://example.com/medical-record-1.pdf",
-      description: "Annual checkup",
-      consent: true,
+        patientId: "P001",
+        patientName: "John Doe",
+        age: 35,
+        gender: "Male",
+        bloodGroup: "A+",
+        medicalRecordFile: "https://example.com/medical-record-1.pdf",
+        description: "Annual checkup",
+        consent: true,
     },
     {
-      patientId: "P002",
-      patientName: "Jane Smith",
-      age: 45,
-      gender: "Female",
-      bloodGroup: "B-",
-      medicalRecordFile: "https://example.com/medical-record-2.pdf",
-      description: "MRI Scan Report",
-      consent: true,
+        patientId: "P002",
+        patientName: "Jane Smith",
+        age: 45,
+        gender: "Female",
+        bloodGroup: "B-",
+        medicalRecordFile: "https://example.com/medical-record-2.pdf",
+        description: "MRI Scan Report",
+        consent: true,
     },
     {
         patientId: "P003",
@@ -28,8 +28,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-3.pdf",
         description: "Cardiac Examination",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P004",
         patientName: "Emily Brown",
         age: 28,
@@ -38,8 +38,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-4.pdf",
         description: "Allergy Test Results",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P005",
         patientName: "David Martinez",
         age: 40,
@@ -48,8 +48,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-5.pdf",
         description: "Diabetes Checkup",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P006",
         patientName: "Sophia Wilson",
         age: 65,
@@ -58,8 +58,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-6.pdf",
         description: "CT Scan Report",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P007",
         patientName: "William Taylor",
         age: 32,
@@ -68,8 +68,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-7.pdf",
         description: "Dental Examination",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P008",
         patientName: "Olivia Moore",
         age: 55,
@@ -78,8 +78,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-8.pdf",
         description: "MRI Scan Report",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P009",
         patientName: "James Thompson",
         age: 48,
@@ -88,8 +88,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-9.pdf",
         description: "Eye Examination",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P010",
         patientName: "Emma Rodriguez",
         age: 30,
@@ -98,8 +98,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-10.pdf",
         description: "Pregnancy Checkup",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P011",
         patientName: "Daniel Harris",
         age: 42,
@@ -108,8 +108,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-11.pdf",
         description: "X-Ray Scan Report",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P012",
         patientName: "Isabella Clark",
         age: 25,
@@ -118,8 +118,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-12.pdf",
         description: "Ultrasound Results",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P013",
         patientName: "Ethan Lee",
         age: 55,
@@ -128,8 +128,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-13.pdf",
         description: "Cardiac Stress Test",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P014",
         patientName: "Ava Turner",
         age: 37,
@@ -138,8 +138,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-14.pdf",
         description: "Allergy Test Results",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P015",
         patientName: "Noah Baker",
         age: 48,
@@ -148,8 +148,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-15.pdf",
         description: "Colonoscopy Report",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P016",
         patientName: "Mia Garcia",
         age: 29,
@@ -158,8 +158,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-16.pdf",
         description: "Dermatology Consultation",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P017",
         patientName: "Liam Martinez",
         age: 60,
@@ -168,8 +168,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-17.pdf",
         description: "Neurology Examination",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P018",
         patientName: "Charlotte Young",
         age: 33,
@@ -178,8 +178,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-18.pdf",
         description: "CT Scan Results",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P019",
         patientName: "Elijah Hill",
         age: 50,
@@ -188,8 +188,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-19.pdf",
         description: "Endoscopy Report",
         consent: true,
-      },
-      {
+    },
+    {
         patientId: "P020",
         patientName: "Amelia King",
         age: 27,
@@ -198,8 +198,8 @@ export const medicalRecordsData = [
         medicalRecordFile: "https://example.com/medical-record-20.pdf",
         description: "ENT Consultation",
         consent: true,
-      }
-      
+    }
+
     // Add more dummy records here if needed
-  ];
+];
   

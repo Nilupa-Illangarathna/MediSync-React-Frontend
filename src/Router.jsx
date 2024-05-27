@@ -1,7 +1,7 @@
 // Router.jsx
 
 import * as React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
 import Home from "./components/home/Home";
 import ProductPage from "./components/productView/ProductPage";
@@ -19,43 +19,43 @@ import EducationalContentPage from "./components/dummyComponents/EducationConten
 import ArticleDetail from "./components/dummyComponents/ArticleDetails";
 import HealthGuideDetails from "./components/dummyComponents/HealthGuideDetails";
 import DrugInteractionPage from "./components/dummyComponents/DrugInteractionsPage";
-import { navLinks, initialRole } from "./RBAC"; // Import RBAC logic
+import {initialRole} from "./RBAC"; // Import RBAC logic
 import ABACTable from "./components/superAdmin/superAdminHome/ABACTable";
 
 function Router() {
-  const storedData = localStorage.getItem("formData");
-  const isFormDataExists = !!storedData;
-  const [role, setRole] = React.useState(initialRole);
+    const storedData = localStorage.getItem("formData");
+    const isFormDataExists = !!storedData;
+    const [role, setRole] = React.useState(initialRole);
 
-  return (
-    <BrowserRouter>
-      <NavBar role={role} setRole={setRole} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<ProfilePage />} />
+    return (
+        <BrowserRouter>
+            <NavBar role={role} setRole={setRole}/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/profile" element={<ProfilePage/>}/>
 
-        <Route path="/product/:productId" element={<ProductPage />} />
+                <Route path="/product/:productId" element={<ProductPage/>}/>
 
-        <Route path="/tryOn/:productId" element={<ServicePage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/recordManagement" element={<RecordManagement />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/terms" element={<TermsPage />} />
-        <Route path="/uploadRecords" element={<MedicalRecordUpload />} />
-        <Route path="/payments" element={<PaymentGateway />} />
-        <Route path="/abac" element={<ABACTable />} />
-        <Route path="/Pat_DocComm" element={<DoctorPatientChat />} />
-        <Route path="/EducationalContent" element={<EducationalContentPage/>} />
-        <Route path="/article/:id" element={<ArticleDetail />} /> 
-        <Route path="/healthGuide/:id" element={<HealthGuideDetails />} />
-        <Route path="/DrugInteraction" element={<DrugInteractionPage />} />
-        <Route path="/log" element={<DrugInteractionPage />} />
+                <Route path="/tryOn/:productId" element={<ServicePage/>}/>
+                <Route path="/about" element={<About/>}/>
+                <Route path="/recordManagement" element={<RecordManagement/>}/>
+                <Route path="/signin" element={<SignIn/>}/>
+                <Route path="/signup" element={<SignUp/>}/>
+                <Route path="/terms" element={<TermsPage/>}/>
+                <Route path="/uploadRecords" element={<MedicalRecordUpload/>}/>
+                <Route path="/payments" element={<PaymentGateway/>}/>
+                <Route path="/abac" element={<ABACTable/>}/>
+                <Route path="/Pat_DocComm" element={<DoctorPatientChat/>}/>
+                <Route path="/EducationalContent" element={<EducationalContentPage/>}/>
+                <Route path="/article/:id" element={<ArticleDetail/>}/>
+                <Route path="/healthGuide/:id" element={<HealthGuideDetails/>}/>
+                <Route path="/DrugInteraction" element={<DrugInteractionPage/>}/>
+                <Route path="/log" element={<DrugInteractionPage/>}/>
 
 
-      </Routes>
-    </BrowserRouter>
-  );
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default Router;

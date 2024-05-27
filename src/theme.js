@@ -1,4 +1,4 @@
-import { colors } from "./utils";
+import {colors} from "./utils";
 
 export const themeOptions = {
     typography: {

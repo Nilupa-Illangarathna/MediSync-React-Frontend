@@ -1,55 +1,55 @@
 export const getAvailableAppointmentsBySpeciality = async (
-  doctorSpeciality,
-  setAppointments
+    doctorSpeciality,
+    setAppointments
 ) => {
-  if (doctorSpeciality.length === 0) {
-    return;
-  }
-
-  const response = await fetch(
-    "http://localhost:3000/get-available-appointments",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ specialty: doctorSpeciality }),
+    if (doctorSpeciality.length === 0) {
+        return;
     }
-  );
 
-  if (!response.ok) {
-    const message = `An error has occured: ${response.status}`;
-    throw new Error(message);
-  }
+    const response = await fetch(
+        "http://localhost:3000/get-available-appointments",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({specialty: doctorSpeciality}),
+        }
+    );
 
-  const appointments = await response.json();
+    if (!response.ok) {
+        const message = `An error has occured: ${response.status}`;
+        throw new Error(message);
+    }
 
-  setAppointments(appointments.data);
+    const appointments = await response.json();
+
+    setAppointments(appointments.data);
 };
 
 export const bookAppointment = async (
-  patientEmail,
-  patientId,
-  appointmentId,
-  setBookedAppointmentId
+    patientEmail,
+    patientId,
+    appointmentId,
+    setBookedAppointmentId
 ) => {
-  const response = await fetch("http://localhost:3000/book-appointment", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ patientEmail, patientId, appointmentId }),
-  });
+    const response = await fetch("http://localhost:3000/book-appointment", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({patientEmail, patientId, appointmentId}),
+    });
 
-  if (!response.ok) {
-    const message = `An error has occured: ${response.status}`;
-    throw new Error(message);
-  }
+    if (!response.ok) {
+        const message = `An error has occured: ${response.status}`;
+        throw new Error(message);
+    }
 
-  const data = await response.json();
-  if (data.message === "Appointment booked successfully") {
-    setBookedAppointmentId(appointmentId);
-  }
+    const data = await response.json();
+    if (data.message === "Appointment booked successfully") {
+        setBookedAppointmentId(appointmentId);
+    }
 
-  return data.message;
+    return data.message;
 };

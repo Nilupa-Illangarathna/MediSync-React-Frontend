@@ -4,13 +4,13 @@ import HowItWorksSection from "./HowItWorksSection"
 import CollectionsSection from "./CollectionsSection"
 
 const Home = () => {
-  return (
-    <>
-      <HeroSection />
-      <HowItWorksSection />
-      <CollectionsSection />
-    </>
-  )
+    return (
+        <>
+            <HeroSection/>
+            <HowItWorksSection/>
+            <CollectionsSection/>
+        </>
+    )
 }
 
 export default Home
